@@ -39,6 +39,12 @@ def buildCube():
         ui.messageBox('New component failed to create')
         return
 
+    #agregar un plano de diseño
+    sketches = newComp.sketches
+    sketch   = sketches.add(newComp.zXConstructionPlane)
+
+    #mensaje final
+    ui.messageBox('Success')
 
 #Definir la funcion de inicio al correr la aplicacion
 def run(context):
